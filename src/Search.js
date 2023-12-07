@@ -11,8 +11,7 @@ export default function Search() {
               class="form-control shadow-sm"
               placeholder="Enter city name..."
               id="searched-city"
-              auto
-              focus="on"
+              autoFocus="on"
               autocomplete="off"
             />
           </div>

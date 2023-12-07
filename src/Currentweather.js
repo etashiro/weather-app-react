@@ -14,7 +14,7 @@ export default function Currentweather() {
   };
   return (
     <div className="Currentweather">
-      <h1>{weatherData.city}</h1>
+      <h1 className="mt-3">{weatherData.city}</h1>
       <ul>
         <li>{weatherData.date}</li>
         <li>{weatherData.description}</li>
