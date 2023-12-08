@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 import "./Weather.css";
@@ -15,7 +16,7 @@ export default function Weather(props) {
       city: response.data.city,
       description: response.data.condition.description,
       imageUrl: response.data.condition.icon_url,
-      date: "Friday 12:07 PM",
+      date: new Date(response.data.time * 1000),
     });
   }
 
@@ -27,17 +28,16 @@ export default function Weather(props) {
             <div className="col-7">
               <input
                 type="text"
-                class="form-control shadow-sm"
+                className="form-control shadow-sm"
                 placeholder="Enter city name..."
-                id="searched-city"
                 autoFocus="on"
-                autocomplete="off"
+                autoComplete="off"
               />
             </div>
             <div className="col-2">
               <input
                 type="submit"
-                class="btn btn-primary shadow-sm"
+                className="btn btn-primary shadow-sm"
                 value="Search"
               />
             </div>
@@ -46,7 +46,9 @@ export default function Weather(props) {
         <div className="Weather-info">
           <h1 className="mt-3">{weatherData.city}</h1>
           <ul>
-            <li>{weatherData.date}</li>
+            <li>
+              <FormattedDate date={weatherData.date} />
+            </li>
             <li className="text-capitalize">{weatherData.description}</li>
           </ul>
           <div className="row temp-info-today">
