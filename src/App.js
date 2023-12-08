@@ -1,14 +1,12 @@
 import "./App.css";
-import Search from "./Search";
-import Currentweather from "./Currentweather";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 export default function App() {
   return (
     <div>
       <div className="App">
-        <Search />
-        <Currentweather />
+        <Weather />
       </div>
       <Footer />
     </div>

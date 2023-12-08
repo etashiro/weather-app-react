@@ -1,8 +1,8 @@
-.Currentweather {
+.Weather {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.Currentweather h1 {
+.Weather-info h1 {
   color: #7c7c7c;
   font-size: 24px;
   font-weight: 100;
@@ -11,12 +11,12 @@
   margin-top: 10px;
 }
 
-.Currentweather ul {
+.Weather-info ul {
   margin: 0 0 10px;
   padding: 0;
 }
 
-.Currentweather li {
+.Weather-info li {
   color: #7c7c7c;
   font-size: 16px;
   font-weight: 100;
@@ -37,7 +37,7 @@
   font-size: 20px;
 }
 
-.Currentweather img {
+.Weather-info img {
   position: relative;
   top: -20px;
 }
