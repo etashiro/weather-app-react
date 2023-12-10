@@ -1,0 +1,16 @@
+.WeatherTemperature .temp-today {
+  font-size: 60px;
+  font-weight: 3400;
+  line-height: 1;
+}
+
+.WeatherTemperature .units {
+  position: relative;
+  top: -30px;
+  left: 5px;
+  font-size: 16px;
+}
+
+.WeatherTemperature a {
+  text-decoration: none;
+}
