@@ -43,7 +43,7 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit} className="city-search">
           <div className="row">
-            <div className="col-7">
+            <div className="col-8">
               <input
                 type="text"
                 className="form-control shadow-sm"
